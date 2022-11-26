@@ -1,24 +1,17 @@
 # README
 
-This week, we worked about API. We created RestApi for our website
+This week, the project is about to add a form for action requests. A RestAPi is used for the following actions:
+- get all interventions with a Pending status
+- update the start date of intervention and the status for InProgress
+- update the end date of the intervention and the status for completed
 
-
- 
 
 ## Install
+In the project folder, an intervention controller file and an intervention model file have been added.
 
-To create the REST API, it is necessary to use the following tutorial: 
-https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio
 
-We can install this package in .NET Core application using NuGet package manager: 
-https://balramchavan.medium.com/setup-entity-framework-core-for-mysql-in-asp-net-core-2-5b40a5a3af94
+## Postman collection
+https://api.postman.com/collections/24467497-f7b57141-7cf7-4acf-a7f3-0da33b89069b?access_key=PMAT-01GJRFBFZAB5B513GHQ9K8Y88Y
 
-Microsoft doesn't have official package to support MySQL data provider for EF Core (yet). With this package we can make the connection to the Mysql database. 
-After the coding of the API we do the deploy in the azure.
 
-To do the deploy we have to create an account in azure portal:
-https://azure.microsoft.com/en-ca/free/search/?&ef_id=Cj0KCQiA99ybBhD9ARIsALvZavWoqb4n2zKj2gqNMsPQshq2VMSPzJZQ_vKO48HGp8kYyt0wuHcBxCgaAg1PEALw_wcB:G:s&OCID=AIDcmmqz3gd78m_SEM_Cj0KCQiA99ybBhD9ARIsALvZavWoqb4n2zKj2gqNMsPQshq2VMSPzJZQ_vKO48HGp8kYyt0wuHcBxCgaAg1PEALw_wcB:G:s&gclid=Cj0KCQiA99ybBhD9ARIsALvZavWoqb4n2zKj2gqNMsPQshq2VMSPzJZQ_vKO48HGp8kYyt0wuHcBxCgaAg1PEALw_wcB
-
-Then to publish the project we right click on the project name and click on publish and follow the steps of the tutorial.
-
-![image](https://user-images.githubusercontent.com/113941321/202827901-e90bdf0f-ed1f-455d-b033-20f818e8d14f.png)
+![postman](https://user-images.githubusercontent.com/113941321/204068063-a3d2575e-b7f9-46da-a640-17528bf81116.png)
