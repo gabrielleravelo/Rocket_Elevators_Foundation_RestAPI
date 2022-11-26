@@ -16,7 +16,7 @@ namespace Rocket.Elevators.RestApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Intervention> GetAllInterventions()
+        public IEnumerable<Intervention> GetAllInterventionsStatusPending()
         {
             return _mySqlContext.Interventions.Where(d => d.InterventionStartAt.Equals(null) && d.Status.Equals("Pending")).ToList();
         }
