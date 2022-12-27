@@ -24,16 +24,16 @@ namespace Rocket.Elevators.RestApi.Model
         public DateTime ElevatorId { get; set; }
 
         [Column("interventionStartAt")]
-        public string InterventionStartAt { get; set; }
+        public string? InterventionStartAt { get; set; }
 
         [Column("interventionEndAt")]
-        public string InterventionEndAt { get; set; }
+        public string? InterventionEndAt { get; set; }
 
         [Column("result")]
-        public string Result { get; set; }
+        public string? Result { get; set; }
 
         [Column("report")]
-        public string Report { get; set; }
+        public string? Report { get; set; }
 
         [Column("status")]
         public long Status { get; set; }

@@ -38,7 +38,7 @@ namespace Rocket.Elevators.RestApi.Model
         [Column("building_id")]
         public long BuildingId { get; set; }
 
-        public virtual ICollection<Column> Columns { get; set; }
+        /*public virtual ICollection<Column> Columns { get; set; }*/
 
     }
 }
