@@ -26,6 +26,6 @@ namespace Rocket.Elevators.RestApi.Model
         [Column("battery_id")]
         public long BatteryId { get; set; }
 
-        public virtual ICollection<Elevator> Elevators { get; set; }
+        /*public virtual ICollection<Elevator> Elevators { get; set; }*/
     }
 }

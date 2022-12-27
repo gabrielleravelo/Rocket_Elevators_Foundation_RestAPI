@@ -36,10 +36,10 @@ namespace Rocket.Elevators.RestApi.Model
         public DateTime? InterventionEndAt { get; set; }
 
         [Column("result")]
-        public string Result { get; set; }
+        public string? Result { get; set; }
 
         [Column("report")]
-        public string Report { get; set; }
+        public string? Report { get; set; }
 
         [Column("status")]
         public string Status { get; set; }

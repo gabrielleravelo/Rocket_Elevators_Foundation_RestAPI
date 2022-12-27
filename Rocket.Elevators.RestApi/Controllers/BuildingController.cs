@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Rocket.Elevators.RestApi.Infra.Context;
 using Rocket.Elevators.RestApi.Model;
+using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace Rocket.Elevators.RestApi.Controllers
@@ -18,8 +19,12 @@ namespace Rocket.Elevators.RestApi.Controllers
             _mySqlContext = mySqlContext;
            
         }
-
-        [HttpGet]
+		
+        
+        //I commented this part in order to be able to make the api work for the customer portal
+		//Code to review
+		
+        /*[HttpGet]
         public IEnumerable<Building> GetAllBuildingsContainsBattery()
         {
             return _mySqlContext.Buildings.Where(b => b.Batteries.Count > 0);
@@ -51,8 +56,11 @@ namespace Rocket.Elevators.RestApi.Controllers
                         TechnicalContactFullName = b.TechnicalContactFullName,
                         TechnicalContactPhoneNumber = b.TechnicalContactPhoneNumber,
                     });
-
             
-        }
-    }
+        }*/
+
+
+
+
+	}
 }

@@ -15,11 +15,11 @@ namespace Rocket.Elevators.RestApi.Controllers
             _mySqlContext = context;
         }
         
-        [HttpGet]
+        /*[HttpGet]
         public IEnumerable<Lead> GetAllLeads()
         {
             return _mySqlContext.Leads;
-        }
+        }*/
 
         [HttpGet]
         public Lead GetLeadById(long id)
