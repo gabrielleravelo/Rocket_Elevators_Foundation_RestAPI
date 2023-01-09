@@ -19,7 +19,7 @@ namespace Rocket.Elevators.RestApi.Controllers
 		[HttpGet]
 		public IEnumerable<Employee> GetAllEmployees()
 		{
-            return _mySqlContext.Employees;
+			return _mySqlContext.Employees;
 		}
 
 		[HttpGet]
