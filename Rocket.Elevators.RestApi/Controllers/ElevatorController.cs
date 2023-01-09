@@ -26,7 +26,7 @@ namespace Rocket.Elevators.RestApi.Controllers
 
        
         [HttpPost]
-        public void UpdateStatusElevatorById(long id, string status)
+        public string UpdateStatusElevatorById(long id, string status)
         {
             var elevator = _mySqlContext.Elevators.Single(i => i.Id.Equals(id));
 
@@ -35,7 +35,8 @@ namespace Rocket.Elevators.RestApi.Controllers
                 elevator.Status = status;
                 _mySqlContext.SaveChanges();
             }
-        }
+			return String.IsNullOrEmpty(status) ? "" : status;
+		}
 
         [HttpGet]
         public IEnumerable<Elevator> GetAllElevatorStatusNotOperation()

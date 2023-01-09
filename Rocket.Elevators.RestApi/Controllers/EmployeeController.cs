@@ -22,6 +22,24 @@ namespace Rocket.Elevators.RestApi.Controllers
             return _mySqlContext.Employees;
 		}
 
-		
-    }
+		[HttpGet]
+		public bool ValidateEmail(string inputemail)
+		{
+			bool inputEmailBool = false;
+
+			try
+			{
+				Employee employee = _mySqlContext.Employees.Single(employee=> employee.Email == inputemail);
+				
+				if (employee != null)
+					inputEmailBool = true;
+			}
+			catch (Exception error)
+			{
+
+			}
+
+			return inputEmailBool;
+		}
+	}
 }
